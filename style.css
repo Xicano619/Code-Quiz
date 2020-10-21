@@ -1,5 +1,14 @@
 .container {
-    padding: 2;
-    margin: auto;
-    
+  height: 300px;
+  background-color: powderblue;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em
+
+}
+.Title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 4em;
 }
