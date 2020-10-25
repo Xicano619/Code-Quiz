@@ -1,17 +1,24 @@
 // Trigger game to start
 var stButton = document.getElementsByClassName("start-btn");
-var timerCountDown = document.getElementsById("timecountdown");
+var timerCountDown = document.getElementsById("timer-countdown");
 var que1 = document.getElementsByClassName("question1");
 var listQue = document.getElementsByClassName("listQs");
 var totalQue = document.getElementsByClassName("totalQ");
 var result = document.getElementsById("result");
 
 
-// game starts when button is click, eventlistener.
-stButton.eventListener("click", function() {
-// clicked button will trigger a function that shows the 1st question with its options. 
 
-}
+
+// game starts when button is click, eventlistener.
+stButton.addEventListener("click", function(){
+// clicked button will trigger a function that shows the 1st question with its options. 
+    que1.textContent = listQue;
+    console.log("click")
+})
+ 
+
+
+
 
 // create an array of objects for questions and choices.
 var arrayQue = [
@@ -39,6 +46,18 @@ var arrayQue = [
     
 ]
 var currentIndex = 0;
+ arrayQue[currentIndex].question
+ currentIndex++;
+
+ var currentIndex = 1;
+ arrayQue[currentIndex].question
+ currentIndex++;
+
+ var currentIndex = 2;
+ arrayQue[currentIndex].question
+ currentIndex++;
+
+ var currentIndex = 3;
  arrayQue[currentIndex].question
  currentIndex++;
 // Create a function that checks the answer of the button, and displays correct or incorrect.
