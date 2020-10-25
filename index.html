@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QUIZ-Time</title>
+    
+    
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- navBar with 'View Highscore' link and time countdown -->
+    <ul class="nav">
+        <a class="nav-list" href="#"> View Highscore</a>
         
-        <title>QUIZ-Time</title>
-
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-        <link rel="stylesheet" href="./style.css">
-
-    </head>
-
-    <body>
-        <!-- navBar with 'View Highscore' link and time countdown -->
-        <ul class="nav">
-            <a class="nav-list" href="#"> View Highscore</a>
-        </ul> 
-        <!-- Main container -->
-        <main class="container">
-            <!-- header -->
-            <h1 class="Title">The Coding Quiz</h1>
-             <!-- Instructions/list questions -->
-            <p>The instructions for the quiz goes HERE.</p>
-            <button class="start-quiz">Start Quiz</button>
-            <!-- div verifying correct answer -->
-        </main>
-      
+    </ul>
+    <div id="timecountdown">Timer</div>
     
-    
-        <script></script>
-    </body>
+    <!-- Main container -->
+    <main class="container">
+        <!-- header -->
+        <h1 class="Title">The Coding Quiz</h1>
+        <hr>
+        <!-- Instructions/list questions -->
+        <p class="timeSec"> The following quiz will test your coding knowledge.<br><br> Once you click 'start' you will have <span>60 seconds</span> to complete the 5 multiple-choice questions.<br><br> Time will be deducted by <span id="deducedSec">10 seconds</span> for every incorrect choice.</p>
+        <hr>
+        <button class="start-btn">Start Quiz</button>
+        <!-- div verifying correct answer -->
+    </main>
+
+    <!-- 
+        Quiz box -->
+    <div class="theQuiz">
+        <header>
+            <div class="title">Coding Quiz</div>
+        </header>
+        <section>
+            <div>
+                <span class="question1">What does HTML suggest?</span>
+            </div>
+            <div class="listQs"></div>
+            <!-- footer Quiz box -->
+            <footer >
+                <span  class="totalQ">1 OF 5 QUESTIONS</span>
+                <span id="result">Placeholder</span>
+            </footer>
+
+        </section>
+    </div>
+   
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
 </html>
