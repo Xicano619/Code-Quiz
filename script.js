@@ -12,9 +12,10 @@ var result = document.getElementsById("result");
 // game starts when button is click, eventlistener.
 stButton.addEventListener("click", function(){
 // clicked button will trigger a function that shows the 1st question with its options. 
-    que1.textContent = listQue;
+    
+});
+que1.textContent = listQue;
     console.log("click")
-})
  
 
 
@@ -63,6 +64,9 @@ var currentIndex = 0;
 // Create a function that checks the answer of the button, and displays correct or incorrect.
 // Create timer and when user picks incorrect button, time is shaved (10 secs off).
 // Display timer countdown on front-end, triggered with  start quiz button.
+var time;
+var timer = 60; 
+
 // When game is over, either finishing the game and or timer runs out, trigger a function that will calculate the score.
 // Store the scores (highs scores) and have an initial input (button).
 // look up css display: none, adding and removing a class. This will go with display correct and incorrect result. 
